@@ -6,6 +6,32 @@
     <title>Nano Studio - App Development</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Estilos adicionados para garantir consistência */
+        :root {
+            --apple-black: #1d1d1f;
+            --apple-gray-4: #424245;
+        }
+        .mobile-menu-link {
+            font-size: 24px;
+            font-weight: 500;
+            text-decoration: none;
+            color: var(--apple-black);
+            padding: 15px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            display: block;
+        }
+        #close-mobile-menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            font-size: 24px;
+            color: var(--apple-gray-4);
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div id="home-page" class="page">
@@ -99,7 +125,7 @@
                     <!-- CNY to IRR Live Exchange -->
                     <div class="app-card">
                         <div class="app-icon">
-                            <i class="fas fa-exchange-alt"></i> <!-- Símbolo de câmbio -->
+                            <i class="fas fa-exchange-alt"></i>
                         </div>
                         <h3 class="app-title">CNY to IRR Live Exchange</h3>
                         <p class="app-description">Real‑time currency converter app that provides live exchange rates from Chinese Yuan (CNY) to Iranian Rial (IRR). Perfect for travelers, business, and anyone needing accurate, up‑to‑date conversions.</p>
@@ -109,6 +135,24 @@
                                 <i class="fas fa-external-link-alt"></i> Learn More
                             </a>
                             <a href="CNYtoIRR/privacy.html" class="btn btn-small btn-outline">
+                                <i class="fas fa-shield-alt"></i> Privacy Policy
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Ocre Tracker - Dofus Helper -->
+                    <div class="app-card">
+                        <div class="app-icon">
+                            <i class="fas fa-egg"></i> <!-- Ícone que lembra um Dofus (ovo de dragão) -->
+                        </div>
+                        <h3 class="app-title">Ocre Tracker</h3>
+                        <p class="app-description">Companion app for Dofus players. Track your progress in the Eternal Harvest quest for the Ocre Dofus. Monitor achievements, manage resources, and optimize your journey to obtain the legendary dragon egg.</p>
+                        <div class="app-status">Available on iOS and Android</div>
+                        <div class="app-actions">
+                            <a href="#" class="btn btn-small">
+                                <i class="fas fa-external-link-alt"></i> Learn More
+                            </a>
+                            <a href="OcreTracker/privacy.html" class="btn btn-small btn-outline">
                                 <i class="fas fa-shield-alt"></i> Privacy Policy
                             </a>
                         </div>
@@ -146,12 +190,12 @@
     
     <div id="mobile-menu" style="display: none; position: fixed; top: 52px; left: 0; right: 0; bottom: 0; background-color: rgba(255, 255, 255, 0.95); backdrop-filter: saturate(180%) blur(20px); z-index: 9998; padding: 30px;">
         <div style="display: flex; flex-direction: column; gap: 20px;">
-            <a href="#home" class="mobile-menu-link" style="font-size: 24px; font-weight: 500; text-decoration: none; color: var(--apple-black); padding: 15px 0; border-bottom: 1px solid rgba(0,0,0,0.05);">Home</a>
-            <a href="#apps" class="mobile-menu-link" style="font-size: 24px; font-weight: 500; text-decoration: none; color: var(--apple-black); padding: 15px 0; border-bottom: 1px solid rgba(0,0,0,0.05);">Apps</a>
-            <a href="#about" class="mobile-menu-link" style="font-size: 24px; font-weight: 500; text-decoration: none; color: var(--apple-black); padding: 15px 0; border-bottom: 1px solid rgba(0,0,0,0.05);">About</a>
-            <a href="privacy.html" class="mobile-menu-link" style="font-size: 24px; font-weight: 500; text-decoration: none; color: var(--apple-black); padding: 15px 0; border-bottom: 1px solid rgba(0,0,0,0.05);">Privacy Policy</a>
+            <a href="#home" class="mobile-menu-link">Home</a>
+            <a href="#apps" class="mobile-menu-link">Apps</a>
+            <a href="#about" class="mobile-menu-link">About</a>
+            <a href="privacy.html" class="mobile-menu-link">Privacy Policy</a>
             
-            <button id="close-mobile-menu" style="position: absolute; top: 20px; right: 20px; background: none; border: none; font-size: 24px; color: var(--apple-gray-4); cursor: pointer;">
+            <button id="close-mobile-menu">
                 <i class="fas fa-times"></i>
             </button>
         </div>
